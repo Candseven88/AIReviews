@@ -1,0 +1,625 @@
+<h1>AI Reviews 榜单型网站需求文档 6.0</h1>
+<p>项目名称：AIReviews
+部署平台：<strong>Cloudflare Pages</strong>
+核心目标：围绕 &quot;AI Reviews&quot; 热词，打造一个轻量级但高质量的AI工具评测博客，通过精准内容生产和SEO优化获取自然流量。</p>
+<p>⸻</p>
+<h2>1️⃣ 项目背景与核心思路</h2>
+<h3>项目出发点</h3>
+<p>本项目的核心出发点是基于&quot;ai reviews&quot;这一热门搜索词（月搜索量约74,000），创建一个专注于AI工具评测的内容网站。作为一名个人开发者和技术小白，我们的目标是用<strong>完全免费的方式</strong>，构建一个能够持续产出高质量内容、获取自然搜索流量并最终实现被动收入的平台。</p>
+<h3>用户需求分析</h3>
+<ul>
+<li>用户在搜索&quot;ai reviews&quot;时主要寻找什么？
+<ul>
+<li>对热门AI工具的客观评价</li>
+<li>不同AI工具间的功能对比</li>
+<li>价格方案和性价比分析</li>
+<li>适用场景和使用建议</li>
+<li>最新AI工具的更新动态</li>
+</ul>
+</li>
+</ul>
+<h3>竞品分析</h3>
+<p>目前市场上的AI评测网站存在以下问题：</p>
+<ul>
+<li>内容更新不及时，无法跟上快速发展的AI领域</li>
+<li>评测不够深入，缺乏实际使用体验</li>
+<li>过度商业化，评测不够客观</li>
+<li>SEO优化不足，难以在搜索引擎获得好的排名</li>
+<li>用户体验不佳，网站设计过于复杂或简陋</li>
+</ul>
+<h3>我们的差异化优势</h3>
+<ul>
+<li>专注于高质量内容而非复杂功能</li>
+<li>采用AI辅助内容生产，确保更新频率和内容质量</li>
+<li>建立清晰的评测标准和方法论，提高可信度</li>
+<li>优先考虑SEO和内容结构，最大化自然流量</li>
+<li><strong>零成本实现</strong>，一人即可运营和维护</li>
+</ul>
+<p>⸻</p>
+<h2>2️⃣ 关键词策略与内容规划</h2>
+<h3>核心关键词（基于真实数据）</h3>
+<ul>
+<li>
+<p><strong>主要热词</strong>：</p>
+<ul>
+<li>ai reviews (月搜索量: 74,000, 竞争度: 中)</li>
+<li>ai news today (月搜索量: 60,500, 竞争度: 中高)</li>
+<li>best ai tools 2025 (月搜索量: 33,800, 竞争度: 高)</li>
+<li>ai tools comparison (月搜索量: 27,500, 竞争度: 中)</li>
+<li>free ai alternatives (月搜索量: 22,300, 竞争度: 低中)</li>
+</ul>
+</li>
+<li>
+<p><strong>长尾关键词</strong>：</p>
+<ul>
+<li>ai image generator reviews (月搜索量: 18,400)</li>
+<li>chatgpt vs claude vs gemini (月搜索量: 15,700)</li>
+<li>ai writing tools for content creators (月搜索量: 12,300)</li>
+<li>best free ai tools for students (月搜索量: 9,800)</li>
+<li>ai video generator comparison (月搜索量: 8,500)</li>
+</ul>
+</li>
+</ul>
+<h3>内容类型与结构</h3>
+<ol>
+<li>
+<p><strong>单一工具深度评测</strong>（占比40%）</p>
+<ul>
+<li>详细功能介绍和使用体验</li>
+<li>优缺点分析</li>
+<li>价格方案对比</li>
+<li>使用场景推荐</li>
+<li>实际应用案例</li>
+</ul>
+</li>
+<li>
+<p><strong>工具对比文章</strong>（占比30%）</p>
+<ul>
+<li>同类工具功能对比</li>
+<li>价格与性价比分析</li>
+<li>适用场景对比</li>
+<li>推荐决策指南</li>
+</ul>
+</li>
+<li>
+<p><strong>榜单文章</strong>（占比20%）</p>
+<ul>
+<li>特定类别最佳工具榜单（如&quot;2025年最佳AI写作工具&quot;）</li>
+<li>免费替代品榜单</li>
+<li>特定用户群体推荐榜单（如&quot;学生最佳AI工具&quot;）</li>
+</ul>
+</li>
+<li>
+<p><strong>AI新闻与趋势</strong>（占比10%）</p>
+<ul>
+<li>重要AI工具更新动态</li>
+<li>行业趋势分析</li>
+<li>新工具发布报道</li>
+</ul>
+</li>
+</ol>
+<h3>内容生产策略</h3>
+<ul>
+<li><strong>初始内容目标</strong>：30篇高质量文章（10篇深度评测 + 10篇对比文章 + 5篇榜单 + 5篇新闻）</li>
+<li><strong>更新频率</strong>：每周2-3篇新内容</li>
+<li><strong>内容深度</strong>：每篇1500-2500字，确保覆盖主题深度</li>
+<li><strong>媒体丰富度</strong>：每篇文章包含5-8张高质量图片（工具截图、对比图表等）</li>
+<li><strong>内部链接</strong>：每篇文章至少5个内部链接，构建网站内容网络</li>
+<li><strong>外部链接</strong>：每篇文章2-3个高质量外部链接，提高可信度</li>
+</ul>
+<p>⸻</p>
+<h2>3️⃣ 网站实现方案（完全免费方案）</h2>
+<h3>Cloudflare Pages（推荐方案）</h3>
+<p><strong>为什么选择Cloudflare Pages：</strong></p>
+<ul>
+<li>完全免费，无任何隐藏费用或限制</li>
+<li>无需服务器，Cloudflare提供免费托管</li>
+<li>每月构建次数限制高（500次/月）</li>
+<li>支持静态网站生成器（如Hugo、11ty等）</li>
+<li>自动HTTPS和CDN加速</li>
+<li>优秀的性能和SEO表现</li>
+<li>可以直接从GitHub仓库部署</li>
+</ul>
+<h3>其他免费选项对比</h3>
+<table>
+<thead>
+<tr>
+<th>平台</th>
+<th>优点</th>
+<th>缺点</th>
+<th>费用</th>
+<th>适合度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cloudflare Pages</strong></td>
+<td>完全免费<br>高构建次数限制<br>CDN加速<br>支持自定义域名</td>
+<td>需要基础Git知识<br>初始设置略复杂</td>
+<td>100%免费</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td><strong>GitHub Pages</strong></td>
+<td>完全免费<br>版本控制<br>支持Jekyll</td>
+<td>构建选项有限<br>每月构建次数限制低</td>
+<td>100%免费</td>
+<td>★★★★☆</td>
+</tr>
+<tr>
+<td><strong>Netlify (免费版)</strong></td>
+<td>易用界面<br>持续部署</td>
+<td>构建分钟数有限<br>带宽限制</td>
+<td>免费版有限制</td>
+<td>★★★☆☆</td>
+</tr>
+<tr>
+<td><strong>Vercel (免费版)</strong></td>
+<td>现代界面<br>良好性能</td>
+<td>团队限制<br>构建限制</td>
+<td>免费版有限制</td>
+<td>★★★☆☆</td>
+</tr>
+</tbody>
+</table>
+<h3>傻瓜式操作流程</h3>
+<h4>1. 创建GitHub账户</h4>
+<ol>
+<li>访问 <a href="https://github.com">GitHub官网</a></li>
+<li>点击&quot;Sign up&quot;按钮</li>
+<li>输入用户名、电子邮件和密码</li>
+<li>完成验证步骤</li>
+<li>验证电子邮件地址</li>
+</ol>
+<h4>2. 创建网站仓库</h4>
+<ol>
+<li>登录GitHub账户</li>
+<li>点击右上角&quot;+&quot;图标，选择&quot;New repository&quot;</li>
+<li>将仓库命名为<code>ai-reviews</code>或其他描述性名称</li>
+<li>添加描述（可选）</li>
+<li>选择&quot;Public&quot;（公开）</li>
+<li>勾选&quot;Initialize this repository with a README&quot;</li>
+<li>点击&quot;Create repository&quot;按钮</li>
+</ol>
+<h4>3. 使用静态网站生成器（以11ty为例）</h4>
+<ol>
+<li>在本地计算机上安装<a href="https://nodejs.org/">Node.js</a>（免费）</li>
+<li>克隆你的GitHub仓库到本地</li>
+<li>使用终端安装11ty：<code>npm install -g @11ty/eleventy</code></li>
+<li>创建一个基本的11ty项目结构</li>
+<li>添加一个简单的配置文件和基本模板</li>
+</ol>
+<h4>4. 创建基本网站结构</h4>
+<ol>
+<li>创建以下文件夹结构：<pre><code>ai-reviews/
+├── _includes/    # 布局和组件
+├── _data/        # 网站数据
+├── css/          # 样式表
+├── images/       # 图片
+├── posts/        # 文章内容
+├── .eleventy.js  # 配置文件
+└── index.md      # 首页
+</code></pre>
+</li>
+<li>创建基本布局模板</li>
+<li>设置导航菜单和页面结构</li>
+</ol>
+<h4>5. 创建你的第一篇文章</h4>
+<ol>
+<li>在<code>posts</code>文件夹中创建一个新的Markdown文件</li>
+<li>文件命名格式：<code>YYYY-MM-DD-文章标题.md</code></li>
+<li>添加以下内容：<pre><code class="language-markdown">---
+title: ChatGPT详细评测：功能、价格与使用体验
+description: 深入分析ChatGPT的功能、优缺点和适用场景
+date: 2025-01-15
+tags: 
+  - ai-writing
+  - chatgpt
+---
+
+这里是你的文章内容...
+</code></pre>
+</li>
+<li>使用Markdown格式编写文章内容</li>
+</ol>
+<h4>6. 添加图片</h4>
+<ol>
+<li>将图片文件放在<code>images</code>文件夹中</li>
+<li>在文章中使用以下格式引用图片：<pre><code class="language-markdown">![图片描述](/images/图片文件名.jpg)
+</code></pre>
+</li>
+</ol>
+<h4>7. 设置Cloudflare Pages</h4>
+<ol>
+<li>注册<a href="https://dash.cloudflare.com/sign-up">Cloudflare</a>账户（免费）</li>
+<li>进入Cloudflare仪表板，点击&quot;Pages&quot;</li>
+<li>点击&quot;创建项目&quot;按钮</li>
+<li>选择&quot;连接到Git&quot;，授权并选择你的GitHub仓库</li>
+<li>配置构建设置：
+<ul>
+<li>构建命令：<code>npm run build</code>（或根据你的静态网站生成器调整）</li>
+<li>构建输出目录：<code>_site</code>（或根据你的静态网站生成器调整）</li>
+</ul>
+</li>
+<li>点击&quot;保存并部署&quot;</li>
+</ol>
+<h4>8. 设置分析和SEO工具</h4>
+<ol>
+<li>注册<a href="https://analytics.google.com/">Google Analytics</a>（免费）</li>
+<li>创建新的数据流，获取跟踪ID</li>
+<li>将跟踪代码添加到网站模板中</li>
+<li>注册<a href="https://search.google.com/search-console">Google Search Console</a></li>
+<li>添加你的网站并验证所有权</li>
+<li>提交网站地图</li>
+</ol>
+<p>⸻</p>
+<h2>4️⃣ 内容创作流程（AI辅助）</h2>
+<h3>1. 内容规划阶段</h3>
+<ul>
+<li>使用Google Trends查看热门AI话题</li>
+<li>创建内容日历，规划未来2-4周的文章</li>
+<li>为每篇文章准备大纲和关键点</li>
+</ul>
+<h3>2. 研究阶段</h3>
+<ul>
+<li>亲自试用目标AI工具（大多数提供免费试用）</li>
+<li>记录关键功能、优缺点和使用体验</li>
+<li>收集工具截图和示例</li>
+</ul>
+<h3>3. 内容创作阶段（AI辅助）</h3>
+<ul>
+<li>
+<p><strong>使用Claude/ChatGPT生成初稿</strong>：</p>
+<ol>
+<li>打开Claude或ChatGPT</li>
+<li>使用提供的提示词模板</li>
+<li>提供你的研究笔记和素材</li>
+<li>审核并编辑AI生成的内容</li>
+<li>添加个人见解和真实使用体验</li>
+</ol>
+</li>
+<li>
+<p><strong>添加媒体内容</strong>：</p>
+<ol>
+<li>上传工具截图（自己拍摄的截图）</li>
+<li>使用免费工具（如Canva免费版、GIMP）创建对比图表和信息图</li>
+<li>如需使用第三方图片，使用免版权图库如Unsplash或Pexels</li>
+</ol>
+</li>
+</ul>
+<h3>4. SEO优化阶段</h3>
+<ul>
+<li>使用关键词自然融入标题、小标题和正文</li>
+<li>优化Meta标题和描述</li>
+<li>添加Alt文本到所有图片</li>
+<li>创建内部链接到相关文章</li>
+</ul>
+<h3>5. 发布与推广阶段</h3>
+<ul>
+<li>将文章添加到你的网站仓库并推送到GitHub</li>
+<li>Cloudflare Pages会自动构建和部署更新</li>
+<li>提交新链接到Google Search Console</li>
+<li>在相关社交媒体分享文章</li>
+<li>监控文章表现，根据数据优化</li>
+</ul>
+<p>⸻</p>
+<h2>5️⃣ AI提示词模板</h2>
+<h3>评测文章提示词</h3>
+<pre><code>我正在为AI评测网站创建内容。请帮我根据以下信息撰写一篇关于[工具名称]的评测文章：
+
+工具信息：
+- 名称：[工具名称]
+- 官网：[URL]
+- 主要功能：[简述]
+- 价格方案：[详情]
+- 目标用户：[用户群体]
+
+我的个人体验笔记：
+[粘贴你的使用体验和笔记]
+
+请按照以下结构撰写，使用简洁清晰的语言：
+
+1. 引言：介绍工具的背景和主要用途（3-4句）
+2. 核心功能：详细描述4-6个主要功能（每个功能2-3句）
+3. 使用体验：描述界面、易用性和学习曲线（2-3段）
+4. 价格分析：各套餐的详细对比和性价比分析（表格+1段分析）
+5. 优点：列出3-5个主要优势（项目符号+简短解释）
+6. 缺点：列出3-5个主要劣势（项目符号+简短解释）
+7. 适用场景：描述2-3个最佳使用场景（每个场景2-3句）
+8. 与竞品对比：与2-3个主要竞争对手的功能和价格对比
+9. 总结评分：按功能、易用性、价格、支持质量给出评分（5星制）
+10. 结论：最终推荐和建议（3-4句）
+
+    要求：
+- 总字数控制在1500-2000字之间
+- 使用客观、专业的语言，避免过度营销词汇
+- 加入2-3个实用技巧或不太明显的功能亮点
+- 确保内容对SEO友好，自然融入关键词
+- 适当使用小标题、项目符号和表格提高可读性
+</code></pre>
+<h3>对比文章提示词</h3>
+<pre><code>请帮我撰写一篇比较[工具A]和[工具B]的详细对比文章，用于AI工具评测网站。
+
+两个工具的基本信息：
+- 工具A：[名称、URL、主要功能、价格]
+- 工具B：[名称、URL、主要功能、价格]
+
+我的使用体验：
+[粘贴你的使用体验和笔记]
+
+请按照以下结构撰写：
+
+1. 引言：介绍两款工具的背景和市场定位
+2. 功能对比：详细比较核心功能的异同
+3. 用户界面和易用性对比
+4. 价格方案对比
+5. 各自的优缺点
+6. 适用场景分析：哪种类型的用户更适合选择哪款工具
+7. 实际应用案例对比
+8. 总结与推荐
+
+要求：
+- 客观公正，避免明显偏向任何一方
+- 使用表格清晰展示功能和价格对比
+- 添加实际使用截图的描述位置
+- 总字数在1800-2200字之间
+</code></pre>
+<h3>榜单文章提示词</h3>
+<pre><code>请帮我撰写一篇&quot;2025年最佳[类别]AI工具榜单&quot;文章，用于AI工具评测网站。
+
+榜单信息：
+- 类别：[AI写作/AI图像生成/AI视频制作等]
+- 包含工具数量：[通常5-10个]
+- 评选标准：[功能全面性、易用性、价格、客户支持等]
+
+我计划包含的工具：
+1. [工具1名称] - [简短说明为什么入选]
+2. [工具2名称] - [简短说明为什么入选]
+3. [继续列出其他工具...]
+
+请按照以下结构撰写：
+
+1. 引言：介绍本榜单的目的和评选标准
+2. 榜单总览：简要列出所有入选工具
+3. 详细评测：每个工具的详细介绍（各300-400字）
+   - 核心功能
+   - 价格方案
+   - 优缺点
+   - 最佳使用场景
+   - 评分（5星制）
+4. 如何选择适合自己的工具：决策指南
+5. 总结与展望
+
+要求：
+- 客观公正的评价每款工具
+- 突出每款工具的独特卖点和适用场景
+- 包含价格信息和免费试用选项
+- 总字数在2000-2500字之间
+</code></pre>
+<p>⸻</p>
+<h2>6️⃣ 增长与变现策略</h2>
+<h3>增长策略（简化版）</h3>
+<ol>
+<li>
+<p><strong>内容驱动增长</strong></p>
+<ul>
+<li>专注于高质量内容创作</li>
+<li>针对长尾关键词优化</li>
+<li>定期更新热门文章保持相关性</li>
+</ul>
+</li>
+<li>
+<p><strong>基础SEO优化</strong></p>
+<ul>
+<li>优化每篇文章的Meta标签</li>
+<li>提交网站到Google Search Console</li>
+<li>创建XML网站地图</li>
+</ul>
+</li>
+<li>
+<p><strong>简单社交分享</strong></p>
+<ul>
+<li>在Twitter/X分享新文章</li>
+<li>在相关Reddit社区分享有价值内容</li>
+<li>在ProductHunt上分享工具评测</li>
+</ul>
+</li>
+</ol>
+<h3>变现策略（简单易行）</h3>
+<ol>
+<li>
+<p><strong>联盟营销</strong>（主要收入来源）</p>
+<ul>
+<li>注册AI工具联盟计划（大多数AI工具都提供）</li>
+<li>在评测中自然插入联盟链接</li>
+<li>在&quot;立即试用&quot;按钮中使用联盟链接</li>
+</ul>
+</li>
+<li>
+<p><strong>简单广告</strong>（补充收入）</p>
+<ul>
+<li>加入Google AdSense（设置简单）</li>
+<li>放置少量非侵入式广告</li>
+<li>随着流量增长再优化广告位置</li>
+</ul>
+</li>
+<li>
+<p><strong>赞助内容</strong>（增长后考虑）</p>
+<ul>
+<li>接受工具厂商的赞助评测（明确标记）</li>
+<li>设定透明的赞助政策</li>
+</ul>
+</li>
+</ol>
+<p>⸻</p>
+<h2>7️⃣ 完全免费的实施计划</h2>
+<h3>第一阶段：准备工作（1周）</h3>
+<ol>
+<li>
+<p><strong>创建GitHub账户和仓库</strong></p>
+<ul>
+<li>注册GitHub账户</li>
+<li>创建网站仓库</li>
+<li>设置基本项目结构</li>
+</ul>
+</li>
+<li>
+<p><strong>设置静态网站生成器</strong></p>
+<ul>
+<li>选择并安装静态网站生成器（如11ty、Hugo）</li>
+<li>创建基本模板和布局</li>
+<li>设置基本样式和导航</li>
+</ul>
+</li>
+<li>
+<p><strong>准备基础素材</strong></p>
+<ul>
+<li>使用免费工具创建简单logo</li>
+<li>准备&quot;关于我们&quot;页面内容</li>
+<li>设计基本分类页面</li>
+</ul>
+</li>
+</ol>
+<h3>第二阶段：内容创建（4周）</h3>
+<ol>
+<li>
+<p><strong>研究并试用AI工具</strong></p>
+<ul>
+<li>每周试用2-3个热门AI工具</li>
+<li>记录使用体验和截图</li>
+<li>整理评测笔记</li>
+</ul>
+</li>
+<li>
+<p><strong>使用AI辅助创建内容</strong></p>
+<ul>
+<li>使用提供的提示词模板</li>
+<li>每周创建2-3篇文章</li>
+<li>编辑和优化AI生成的内容</li>
+</ul>
+</li>
+<li>
+<p><strong>发布初始内容</strong></p>
+<ul>
+<li>发布5篇深度评测</li>
+<li>发布3篇对比文章</li>
+<li>发布2篇榜单文章</li>
+</ul>
+</li>
+</ol>
+<h3>第三阶段：设置Cloudflare Pages和优化（2周）</h3>
+<ol>
+<li>
+<p><strong>设置Cloudflare Pages</strong></p>
+<ul>
+<li>注册Cloudflare账户</li>
+<li>连接GitHub仓库</li>
+<li>配置构建设置</li>
+<li>部署网站</li>
+</ul>
+</li>
+<li>
+<p><strong>基础SEO设置</strong></p>
+<ul>
+<li>优化所有文章的Meta信息</li>
+<li>提交网站到Google Search Console</li>
+<li>设置Google Analytics</li>
+</ul>
+</li>
+<li>
+<p><strong>简单推广</strong></p>
+<ul>
+<li>在相关社交媒体分享文章</li>
+<li>在AI相关论坛分享有价值内容</li>
+<li>联系小型AI工具创始人建立关系</li>
+</ul>
+</li>
+</ol>
+<h3>第四阶段：增长与调整（持续）</h3>
+<ol>
+<li>
+<p><strong>内容节奏</strong></p>
+<ul>
+<li>保持每周1-2篇新文章</li>
+<li>定期更新现有热门内容</li>
+<li>根据分析数据调整内容策略</li>
+</ul>
+</li>
+<li>
+<p><strong>开始变现</strong></p>
+<ul>
+<li>添加联盟营销链接</li>
+<li>设置简单广告（如AdSense）</li>
+<li>跟踪转化率并优化</li>
+</ul>
+</li>
+<li>
+<p><strong>扩展功能</strong>（使用免费工具）</p>
+<ul>
+<li>添加更多功能和组件</li>
+<li>实现简单的搜索功能</li>
+<li>优化网站性能和加载速度</li>
+</ul>
+</li>
+</ol>
+<p>⸻</p>
+<h2>8️⃣ 完全免费的工具清单</h2>
+<h3>网站构建与托管</h3>
+<ul>
+<li><strong>Cloudflare Pages</strong>：免费网站托管，无限流量</li>
+<li><strong>GitHub</strong>：免费代码仓库和版本控制</li>
+<li><strong>静态网站生成器</strong>：11ty、Hugo（完全免费）</li>
+<li><strong>Git</strong>：免费版本控制系统</li>
+<li><strong>GitHub Desktop</strong>：免费Git图形界面（适合初学者）</li>
+</ul>
+<h3>内容创作工具</h3>
+<ul>
+<li><strong>Visual Studio Code</strong>：免费代码和Markdown编辑器</li>
+<li><strong>Markdown编辑器</strong>：Typora（免费旧版）或MarkText（完全免费）</li>
+<li><strong>ChatGPT</strong>：免费版AI助手</li>
+<li><strong>Claude</strong>：免费版AI助手</li>
+<li><strong>Google Docs</strong>：免费文档编辑</li>
+</ul>
+<h3>图像和设计工具</h3>
+<ul>
+<li><strong>Canva</strong>：免费版设计工具</li>
+<li><strong>GIMP</strong>：免费开源图像编辑软件（Photoshop替代品）</li>
+<li><strong>Inkscape</strong>：免费开源矢量图形编辑器</li>
+<li><strong>Unsplash</strong>：免费高质量图库</li>
+<li><strong>Pexels</strong>：免费图片和视频</li>
+<li><strong>Pixabay</strong>：免费图片和插图</li>
+</ul>
+<h3>SEO和分析工具</h3>
+<ul>
+<li><strong>Google Search Console</strong>：免费SEO监控工具</li>
+<li><strong>Google Analytics</strong>：免费网站分析</li>
+<li><strong>Google Trends</strong>：免费关键词研究</li>
+<li><strong>Keyword Surfer</strong>：免费Chrome扩展，用于关键词研究</li>
+<li><strong>Ubersuggest</strong>：有限免费版提供关键词研究</li>
+</ul>
+<h3>截图和录屏</h3>
+<ul>
+<li><strong>Windows Snipping Tool</strong>：Windows内置截图工具</li>
+<li><strong>Mac Screenshot</strong>：Mac内置截图功能</li>
+<li><strong>Lightshot</strong>：免费截图工具</li>
+<li><strong>OBS Studio</strong>：免费开源录屏软件</li>
+</ul>
+<h3>项目管理</h3>
+<ul>
+<li><strong>Trello</strong>：免费版项目管理</li>
+<li><strong>GitHub Projects</strong>：免费项目管理</li>
+<li><strong>Google Sheets</strong>：免费电子表格，用于内容日历</li>
+</ul>
+<p>⸻</p>
+<h2>9️⃣ 总结与下一步</h2>
+<p>本项目采用完全免费方案，以&quot;ai reviews&quot;为核心关键词，通过Cloudflare Pages快速搭建AI工具评测网站。通过专注于高质量内容创作和基础SEO优化，即使是技术小白也能建立一个可持续发展的内容网站，为用户提供有价值的AI工具评测，同时通过联盟营销等方式实现收入。</p>
+<h3>立即行动项</h3>
+<ol>
+<li>注册GitHub账户</li>
+<li>创建网站仓库</li>
+<li>选择并设置静态网站生成器</li>
+<li>创建基本网站结构</li>
+<li>研究3-5个热门AI工具</li>
+<li>使用AI助手创建首批评测文章</li>
+<li>设置Cloudflare Pages并部署网站</li>
+</ol>
