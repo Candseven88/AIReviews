@@ -1,0 +1,5 @@
+name = "aireviews"
+pages_build_output_dir = "_site"
+
+[build]
+command = "npm ci && npm run build" 
