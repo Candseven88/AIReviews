@@ -9,7 +9,7 @@
   <!-- Google Analytics code can be added later -->
 </head>
 <body>
-  <header>
+  <header class="site-nav">
     <div class="container">
       <div class="site-header">
         <a href="/" class="site-title">AI Reviews</a>
@@ -37,5 +37,27 @@
       <p>&copy; 2025 AI Reviews. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+  <script>
+    (function () {
+      var btn = document.querySelector('.back-to-top');
+      if (!btn) return;
+      var showAt = 300; // px
+      function onScroll() {
+        if (window.scrollY > showAt) {
+          btn.classList.add('back-to-top--visible');
+        } else {
+          btn.classList.remove('back-to-top--visible');
+        }
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+      btn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+  </script>
 </body>
 </html> 

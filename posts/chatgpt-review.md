@@ -3,13 +3,13 @@ layout: post.njk
 title: "ChatGPT Review 2025: Features, Pricing, and Alternatives"
 date: 2025-08-08
 description: "A comprehensive review of ChatGPT, including its features, pricing plans, pros and cons, and how it compares to alternatives."
-featured_image: "/images/chatgpt-review.jpg"
+featured_image: "/images/chatgpt/chatgpt-interface.jpg"
 tags: ["reviews", "ai tools", "chatbots"]
 ---
 
 # ChatGPT Review 2025: Features, Pricing, and Alternatives
 
-![ChatGPT Interface](/images/chatgpt-review.jpg)
+![ChatGPT Interface](/images/chatgpt/chatgpt-interface.jpg)
 
 ## Introduction
 

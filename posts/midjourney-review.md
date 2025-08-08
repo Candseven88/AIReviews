@@ -3,13 +3,13 @@ layout: post.njk
 title: "Midjourney Review 2025: Features, Pricing, and Alternatives"
 date: 2025-08-08
 description: "A comprehensive review of Midjourney, including its features, pricing plans, pros and cons, and how it compares to alternatives."
-featured_image: "/images/midjourney-review.jpg"
+featured_image: "/images/midjourney/midjourney-interface.jpg"
 tags: ["reviews", "ai tools", "image generation"]
 ---
 
 # Midjourney Review 2025: Features, Pricing, and Alternatives
 
-![Midjourney Interface](/images/midjourney-review.jpg)
+![Midjourney Interface](/images/midjourney/midjourney-interface.jpg)
 
 ## Introduction
 

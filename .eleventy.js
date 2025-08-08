@@ -3,6 +3,19 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("images");
 
+  // Add date filters
+  eleventyConfig.addFilter("dateIso", date => {
+    return date.toISOString();
+  });
+
+  eleventyConfig.addFilter("dateDisplay", date => {
+    return new Date(date).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+  });
+
   // 设置输出目录
   return {
     dir: {

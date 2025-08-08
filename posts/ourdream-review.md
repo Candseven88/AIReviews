@@ -3,13 +3,13 @@ layout: post.njk
 title: "Ourdream.ai Review 2025: Features, Pricing, and Alternatives"
 date: 2025-08-08
 description: "A comprehensive review of Ourdream.ai, including its features, pricing plans, pros and cons, and how it compares to alternatives."
-featured_image: "/images/ourdream-review.jpg"
+featured_image: "/images/ourdream/ourdream-review.jpg"
 tags: ["reviews", "ai tools", "ai companions"]
 ---
 
 # Ourdream.ai Review 2025: Features, Pricing, and Alternatives
 
-![Ourdream.ai Interface](/images/ourdream-review.jpg)
+![Ourdream.ai Interface](/images/ourdream/ai-interface.jpg)
 
 ## Introduction
 

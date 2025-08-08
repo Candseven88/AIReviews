@@ -3,13 +3,13 @@ layout: post.njk
 title: "Tripo AI Review 2025: Features, Pricing, and Alternatives"
 date: 2025-08-08
 description: "A comprehensive review of Tripo AI, including its features, pricing plans, pros and cons, and how it compares to alternatives."
-featured_image: "/images/tripo-review.jpg"
+featured_image: "/images/tripo/tripo-interface.jpg"
 tags: ["reviews", "ai tools", "3d generation"]
 ---
 
 # Tripo AI Review 2025: Features, Pricing, and Alternatives
 
-![Tripo AI Interface](/images/tripo-review.jpg)
+![Tripo AI Interface](/images/tripo/tripo-interface.jpg)
 
 ## Introduction
 

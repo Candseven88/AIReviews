@@ -3,13 +3,13 @@ layout: post.njk
 title: "Claude AI Review 2025: Features, Pricing, and Alternatives"
 date: 2025-08-08
 description: "A comprehensive review of Claude AI, including its features, pricing plans, pros and cons, and how it compares to alternatives."
-featured_image: "/images/claude-review.jpg"
+featured_image: "/images/claude/claude-interface.jpg"
 tags: ["reviews", "ai tools", "chatbots"]
 ---
 
 # Claude AI Review 2025: Features, Pricing, and Alternatives
 
-![Claude AI Interface](/images/claude-review.jpg)
+![Claude AI Interface](/images/claude/claude-interface.jpg)
 
 ## Introduction
 
