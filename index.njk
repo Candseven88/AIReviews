@@ -19,7 +19,7 @@ description: AI tool reviews, comparisons, and rankings to help you choose the r
       {% if loop.index0 < 3 %}
         <div class="post-card">
           {% if post.data.featured_image %}
-            <img src="{{ post.data.featured_image }}" alt="{{ post.data.title }}" class="post-card-image">
+            <img src="{{ post.data.featured_image | url }}" alt="{{ post.data.title }}" class="post-card-image">
           {% endif %}
           <div class="post-card-content">
             <h3 class="post-card-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
@@ -44,15 +44,15 @@ description: AI tool reviews, comparisons, and rankings to help you choose the r
 <section class="categories">
   <h2 class="section-title">Categories</h2>
   <div class="category-list">
-    <a href="/reviews/" class="category-card">
+    <a href="{{ '/reviews/' | url }}" class="category-card">
       <h3>Tool Reviews</h3>
       <p>In-depth analysis of AI tools, including features, pros, cons, and use cases</p>
     </a>
-    <a href="/comparisons/" class="category-card">
+    <a href="{{ '/comparisons/' | url }}" class="category-card">
       <h3>Comparisons</h3>
       <p>Detailed comparisons of similar AI tools to help you make informed decisions</p>
     </a>
-    <a href="/rankings/" class="category-card">
+    <a href="{{ '/rankings/' | url }}" class="category-card">
       <h3>Rankings</h3>
       <p>Best AI tools by category, helping you quickly find quality solutions</p>
     </a>

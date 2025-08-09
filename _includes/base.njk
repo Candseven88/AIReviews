@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if title %}{{ title }} - {% endif %}AI Reviews</title>
   <meta name="description" content="{% if description %}{{ description }}{% else %}AI tool reviews, comparisons, and rankings to help you choose the right AI solutions{% endif %}">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LDZW8YEC8"></script>
   <script>
@@ -33,11 +33,11 @@
         <nav>
           <ul class="nav-links">
             <li><a href="/">Home</a></li>
-            <li><a href="/reviews/">Reviews</a></li>
-            <li><a href="/comparisons/">Comparisons</a></li>
-            <li><a href="/rankings/">Rankings</a></li>
-            <li><a href="/posts/index.html">Posts</a></li>
-            <li><a href="/about/">About</a></li>
+            <li><a href="{{ '/reviews/' | url }}">Reviews</a></li>
+            <li><a href="{{ '/comparisons/' | url }}">Comparisons</a></li>
+            <li><a href="{{ '/rankings/' | url }}">Rankings</a></li>
+            <li><a href="{{ '/posts/index.html' | url }}">Posts</a></li>
+            <li><a href="{{ '/about/' | url }}">About</a></li>
             <li><button class="nav-search-btn" type="button" aria-label="Search">Search</button></li>
           </ul>
         </nav>
@@ -143,7 +143,7 @@
         render(items);
       }
       if(openBtn){ openBtn.addEventListener('click', function(){
-        if(!data){ fetch('/search.json').then(function(r){return r.json();}).then(function(j){ data=j; open(); }).catch(function(){ data = []; open(); }); }
+        if(!data){ fetch('{{ '/search.json' | url }}').then(function(r){return r.json();}).then(function(j){ data=j; open(); }).catch(function(){ data = []; open(); }); }
         else { open(); }
       }); }
       if(closeBtn){ closeBtn.addEventListener('click', close); }

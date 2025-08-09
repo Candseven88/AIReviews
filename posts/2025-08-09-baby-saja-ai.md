@@ -9,7 +9,7 @@ tags: ["trends", "ai voice", "virtual idol"]
 
 # Baby Saja and AI: Recreate the Viral Voice and Virtual Persona (Free Stack)
 
-![Cover — Baby Saja + AI](/images/babysaja/cover.jpg)
+![Cover — Baby Saja + AI]({{ '/images/babysaja/cover.jpg' | url }})
 
 ## What Is “Baby Saja”?
 
@@ -27,7 +27,7 @@ tags: ["trends", "ai voice", "virtual idol"]
 
 ## How AI Fits In (Free-First Options)
 
-![Voice cloning concept](/images/babysaja/voice-clone.jpg)
+![Voice cloning concept]({{ '/images/babysaja/voice-clone.jpg' | url }})
 
 - **Voice cloning / style transfer (free)**:
   - RVC (Retrieval‑based Voice Conversion), [so-vits‑svc](https://github.com/svc-develop-team/so-vits-svc), [Bark](https://github.com/suno-ai/bark), [Piper TTS](https://github.com/rhasspy/piper) — open‑source, no subscription required.
@@ -46,7 +46,7 @@ tags: ["trends", "ai voice", "virtual idol"]
 
 ## Build Your Own “Baby Saja” (Two Paths)
 
-![Workflow](/images/babysaja/workflow.jpg)
+![Workflow]({{ '/images/babysaja/workflow.jpg' | url }})
 
 ### A. Low-Barrier Workflow (fastest)
 
@@ -67,7 +67,7 @@ tags: ["trends", "ai voice", "virtual idol"]
 
 ## Role Prompt (Starter)
 
-![Chat role concept](/images/babysaja/chat-role.jpg)
+![Chat role concept]({{ '/images/babysaja/chat-role.jpg' | url }})
 
 Use this seed prompt with a local LLM:
 

@@ -18,6 +18,8 @@ module.exports = function(eleventyConfig) {
 
   // 设置输出目录
   return {
+    // 允许通过环境变量覆盖路径前缀，便于 Pages 子路径部署
+    pathPrefix: process.env.PATH_PREFIX || '/',
     dir: {
       input: ".",
       output: "_site",

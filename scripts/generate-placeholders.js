@@ -6,6 +6,12 @@ async function ensureJpgFromSvg(svgPath, jpgPath, width, height) {
   const dir = path.dirname(jpgPath);
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 
+  // If a real JPG already exists, do not overwrite it
+  if (fs.existsSync(jpgPath)) {
+    console.log(`Skip existing JPG: ${path.relative(process.cwd(), jpgPath)}`);
+    return;
+  }
+
   const w = width || 1200;
   const h = height || 630;
 
