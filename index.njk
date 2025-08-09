@@ -15,7 +15,7 @@ description: AI tool reviews, comparisons, and rankings to help you choose the r
 <section class="featured-posts">
   <h2 class="section-title">Latest Reviews</h2>
   <div class="post-list">
-    {%- for post in collections.posts | reverse -%}
+    {%- for post in collections.reviews | reverse -%}
       {% if loop.index0 < 3 %}
         <div class="post-card">
           {% if post.data.featured_image %}
