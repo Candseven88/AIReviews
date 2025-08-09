@@ -21,6 +21,9 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "srwxt1t4a1");
   </script>
+  {% if analytics and analytics.cloudflareAnalyticsToken %}
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ analytics.cloudflareAnalyticsToken }}"}'></script>
+  {% endif %}
 </head>
 <body>
   <header class="site-nav">
