@@ -1,0 +1,19 @@
+---
+permalink: /search.json
+layout: null
+---
+[
+{% set comma = joiner(',') %}
+{% for post in collections.all %}
+{% if post.data.layout == 'post.njk' %}
+{{ comma() }}
+  {
+    "url": "{{ post.url }}",
+    "title": {{ post.data.title | dump | safe }},
+    "description": {{ post.data.description | dump | safe }},
+    "tags": {{ post.data.tags | dump | safe }},
+    "date": "{{ post.date | dateIso }}"
+  }
+{% endif %}
+{% endfor %}
+] 

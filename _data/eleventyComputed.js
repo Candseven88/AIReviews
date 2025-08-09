@@ -9,8 +9,8 @@ module.exports = {
     if (!data.date) return '';
     
     const date = new Date(data.date);
-    const options = { year: 'numeric', month: 'long', day: 'numeric' };
-    return date.toLocaleDateString('zh-CN', options);
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  return date.toLocaleDateString('en-US', options);
   },
   
   // 为每篇文章生成永久链接
