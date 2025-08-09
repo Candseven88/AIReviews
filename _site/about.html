@@ -36,7 +36,9 @@
             <li><a href="/reviews/">Reviews</a></li>
             <li><a href="/comparisons/">Comparisons</a></li>
             <li><a href="/rankings/">Rankings</a></li>
+            <li><a href="/posts/index.html">Posts</a></li>
             <li><a href="/about/">About</a></li>
+            <li><button class="nav-search-btn" type="button" aria-label="Search">Search</button></li>
           </ul>
         </nav>
       </div>
@@ -156,6 +158,21 @@
     </div>
   </footer>
 
+  <!-- Search Modal -->
+  <div id="search-modal" class="search-modal" aria-hidden="true" role="dialog" aria-labelledby="search-modal-title">
+    <div class="search-modal__backdrop"></div>
+    <div class="search-modal__dialog" role="document">
+      <div class="search-modal__header">
+        <h2 id="search-modal-title">Search</h2>
+        <button type="button" class="search-modal__close" aria-label="Close">×</button>
+      </div>
+      <div class="search-modal__body">
+        <input type="search" id="search-input" class="search-input" placeholder="Search posts..." autocomplete="off" />
+        <div id="search-results" class="search-results"></div>
+      </div>
+    </div>
+  </div>
+
   <!-- Back to Top Button -->
   <button class="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
   <script>
@@ -177,5 +194,77 @@
       });
     })();
   </script>
+  <script>
+    (function(){
+      var modal = document.getElementById('search-modal');
+      var openBtn = document.querySelector('.nav-search-btn');
+      var closeBtn = modal && modal.querySelector('.search-modal__close');
+      var input = modal && modal.querySelector('#search-input');
+      var results = modal && modal.querySelector('#search-results');
+      var data = null;
+      function open(){
+        if(!modal) return;
+        modal.setAttribute('aria-hidden','false');
+        document.body.style.overflow = 'hidden';
+        setTimeout(function(){ input && input.focus(); }, 0);
+      }
+      function close(){
+        if(!modal) return;
+        modal.setAttribute('aria-hidden','true');
+        document.body.style.overflow = '';
+        if(results) results.innerHTML = '';
+        if(input) input.value = '';
+      }
+      function render(items){
+        if(!results) return;
+        if(!items.length){ results.innerHTML = '<p style="color:var(--gray-color);">No results</p>'; return; }
+        results.innerHTML = items.map(function(p){
+          var tags = (p.tags||[]).map(function(t){return '<span class="post-tag">'+t+'</span>';}).join(' ');
+          return '<div class="post-card" style="margin-top:1rem;">\
+            <div class="post-card-content">\
+              <h3 class="post-card-title"><a href="'+p.url+'">'+p.title+'</a></h3>\
+              <div class="post-card-excerpt">'+(p.description||'')+'</div>\
+              <div class="post-card-meta">\
+                                 <time>'+new Date(p.date).toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'})+'</time>\
+                <div>'+tags+'</div>\
+              </div>\
+            </div>\
+          </div>';
+        }).join('');
+      }
+      function normalize(s){ return (s||'').toLowerCase(); }
+      function matches(p, q){
+        var qn = normalize(q);
+        return normalize(p.title).includes(qn) || normalize(p.description).includes(qn) || (p.tags||[]).join(' ').toLowerCase().includes(qn);
+      }
+      function onInput(){
+        var q = input.value.trim();
+        if(!q){ results.innerHTML = ''; return; }
+        var items = (data||[]).filter(function(p){ return matches(p,q); });
+        render(items);
+      }
+      if(openBtn){ openBtn.addEventListener('click', function(){
+        if(!data){ fetch('/search.json').then(function(r){return r.json();}).then(function(j){ data=j; open(); }).catch(function(){ data = []; open(); }); }
+        else { open(); }
+      }); }
+      if(closeBtn){ closeBtn.addEventListener('click', close); }
+      if(modal){ modal.addEventListener('click', function(e){ if(e.target.classList.contains('search-modal__backdrop')) close(); }); }
+      if(input){ input.addEventListener('input', onInput); }
+      document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+    })();
+  </script>
+  <style>
+    .nav-search-btn { margin-left: 1rem; padding: .4rem .75rem; border:1px solid var(--border-color); border-radius:.375rem; background:#fff; cursor:pointer; }
+    .nav-search-btn:hover { background: var(--light-color); }
+    .search-modal { position: fixed; inset:0; display:block; }
+    .search-modal[aria-hidden="true"] { display:none; }
+    .search-modal__backdrop { position:absolute; inset:0; background: rgba(0,0,0,.3); }
+    .search-modal__dialog { position:relative; max-width: 800px; margin: 10vh auto; background:#fff; border-radius:.5rem; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,.3); }
+    .search-modal__header { display:flex; align-items:center; justify-content:space-between; padding:1rem 1.25rem; border-bottom:1px solid var(--border-color); }
+    .search-modal__close { background:none; border:none; font-size:1.5rem; cursor:pointer; }
+    .search-modal__body { padding:1rem 1.25rem 1.5rem; }
+    .search-input { width:100%; padding:.75rem 1rem; border:1px solid var(--border-color); border-radius:.375rem; font-size:1rem; }
+    .search-results { margin-top:1rem; max-height:50vh; overflow:auto; }
+  </style>
 </body>
 </html> 
