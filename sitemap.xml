@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Pages -->
+  <url>
+    <loc>https://aireviews.wiki/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <lastmod>2025-09-17</lastmod>
+  </url>
+  
+  <!-- Individual Tool Reviews -->
+  <url>
+    <loc>https://aireviews.wiki/posts/chatgpt-review.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-09-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aireviews.wiki/posts/claude-review.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-09-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aireviews.wiki/posts/midjourney-review.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-09-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aireviews.wiki/posts/ourdream-review.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-09-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aireviews.wiki/posts/tripo-review.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-09-17</lastmod>
+  </url>
+  
+  <!-- Comparison Articles -->
+  <url>
+    <loc>https://aireviews.wiki/posts/2025-08-09-chatgpt-vs-claude.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2025-09-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aireviews.wiki/posts/2025-08-09-midjourney-vs-stable-diffusion.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2025-09-17</lastmod>
+  </url>
+  
+  <!-- Rankings and Lists -->
+  <url>
+    <loc>https://aireviews.wiki/posts/2025-08-09-best-ai-chatbots-2025.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2025-09-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aireviews.wiki/posts/2025-08-10-best-pixel-art-tools.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2025-09-17</lastmod>
+  </url>
+  
+  <!-- Special Articles -->
+  <url>
+    <loc>https://aireviews.wiki/posts/2025-08-09-baby-saja-ai.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2025-09-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aireviews.wiki/posts/ai-photo-editor-comprehensive-guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2025-09-17</lastmod>
+  </url>
+</urlset> 
