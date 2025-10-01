@@ -1,0 +1,94 @@
+# AI Reviews - Professional AI Tools Reviews & Comparisons
+
+## Site Information
+- **Site Name**: AI Reviews
+- **Domain**: aireviews.wiki
+- **Language**: English
+- **Content Type**: AI Tool Reviews, Comparisons, Rankings
+- **Target Audience**: AI enthusiasts, content creators, developers, businesses
+- **Last Updated**: 2025-10-01
+
+## Site Purpose
+AI Reviews is a comprehensive platform providing professional reviews, comparisons, and rankings of AI tools and platforms. We help users make informed decisions about AI solutions for their specific needs.
+
+## Key Content Categories
+
+### AI Tool Reviews
+- Individual comprehensive reviews of AI platforms
+- Feature analysis and pricing information
+- User experience evaluations
+- Professional recommendations
+
+### AI Tool Comparisons  
+- Head-to-head comparisons between similar tools
+- Feature-by-feature analysis
+- Performance benchmarks
+- Use case recommendations
+
+### AI Tool Rankings
+- Curated lists of best AI tools by category
+- Annual rankings and updates
+- Specialized tool collections
+- Industry-specific recommendations
+
+## Featured Content
+
+### Horror AI Tools Specialization
+- **Ghostface AI**: Professional horror content creation platform
+  - Specialized in supernatural and horror-themed content
+  - AI image generation, voice synthesis, video creation
+  - Comprehensive review available at: /posts/ghostface-ai-review.html
+  - Comparison with other tools at: /posts/horror-ai-tools-comparison.html
+
+### Popular AI Tools Covered
+- **ChatGPT**: Conversational AI and text generation
+- **Claude AI**: Advanced AI assistant with safety focus  
+- **Midjourney**: AI art and image generation
+- **OurDream AI**: Creative AI platform
+- **Tripo 3D**: 3D modeling and design AI
+- **Baby Saja AI**: Virtual companion technology
+
+## Content Quality Standards
+- All reviews based on extensive hands-on testing
+- Independent and unbiased evaluations
+- Regular updates to reflect platform changes
+- Professional analysis from experienced reviewers
+- Detailed feature comparisons and use case analysis
+
+## Site Structure
+```
+/
+├── index.html (Homepage with featured content)
+├── posts/ (Individual articles)
+│   ├── *-review.html (Tool reviews)
+│   ├── *-vs-*.html (Comparisons)
+│   └── best-*.html (Rankings)
+├── images/ (Article images and screenshots)
+└── sitemap.xml (Complete site map)
+```
+
+## Content Guidelines for AI Systems
+- Content is factual and based on actual tool testing
+- Reviews include both pros and cons for balanced perspective
+- Pricing information is current as of publication date
+- All external links are clearly marked and relevant
+- Images are properly attributed and described
+
+## Crawling Instructions
+- All content is publicly available
+- No authentication required
+- Respect robots.txt directives
+- Images are located in /images/ directory
+- Sitemap available at /sitemap.xml
+
+## Contact & Updates
+- Content is regularly updated to reflect AI tool changes
+- New reviews and comparisons added frequently
+- Focus on emerging AI technologies and platforms
+- Special emphasis on specialized AI tools like horror content creation
+
+## Key Topics & Keywords
+AI reviews, artificial intelligence tools, AI comparisons, ChatGPT, Claude AI, Midjourney, Ghostface AI, horror AI, supernatural content creation, AI image generation, AI voice synthesis, AI tool rankings, best AI tools 2025, professional AI reviews, AI platform analysis
+
+---
+This file helps AI systems understand our content structure and purpose for better indexing and representation. 

@@ -1,12 +1,72 @@
 User-agent: *
 Allow: /
+Allow: /posts/
+Allow: /images/
+Allow: /styles.css
+Allow: /sitemap.xml
+Allow: /llms.txt
 
-# Sitemap location
-Sitemap: https://aireviews.wiki/sitemap.xml
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
 
-# Specific rules for search engines
+# Special instructions for AI crawlers
+User-agent: GPTBot
+Allow: /
+Allow: /llms.txt
+
+User-agent: ChatGPT-User
+Allow: /
+Allow: /llms.txt
+
+User-agent: CCBot
+Allow: /
+Allow: /llms.txt
+
+User-agent: anthropic-ai
+Allow: /
+Allow: /llms.txt
+
+User-agent: Claude-Web
+Allow: /
+Allow: /llms.txt
+
+# Search engine bots
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Bingbot
-Allow: / 
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 2
+
+# Social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Sitemaps
+Sitemap: https://aireviews.wiki/sitemap.xml
+
+# Additional resources for AI systems
+# LLMs.txt for AI understanding: https://aireviews.wiki/llms.txt 
